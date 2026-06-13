@@ -1,0 +1,33 @@
++------------------+
+|      Client      |
++--------+---------+
+         |
+         | 1. Submit Payload
+         v
++------------------+
+|   API Gateway    |
++---+----------+---+
+    |          |
+    | 2a. Write State: "QUEUED"
+    |          v
+    |    +-------------+      3. Read Status      +-------------+
+    |    | State Store | <------------------------+   Client    |
+    |    +------+------+   (Instantly available)  +-------------+
+    |           ^
+    | 2b. Push  | 5. Heartbeat & State Update ("RUNNING" -> "SUCCESS")
+    v           |
++---------------+--+
+|  Message Bus  |
++--------+---------+
+         |
+         | 4. Fetch / Claim Task
+         v
++------------------+     Crashes 3x      +--------------------+
+|  Worker Engine   +-------------------->+ Dead Letter Queue  |
++--------+---------+                     |    (The Isolation  |
+         |                               |     Hospital)      |
+         | 6. Commit Output              +--------------------+
+         v
++------------------+
+|   Result Store   |
++------------------+                                                

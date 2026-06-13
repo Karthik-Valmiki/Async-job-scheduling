@@ -1,0 +1,60 @@
+========================================================================================
+                              INBOUND LAYER (The Receptionist)
+========================================================================================
+
+  [ Client Application ]
+         |
+         | 1. Submit Heavy Request (e.g., File, Raw Data, Command)
+         v
+  [ Ingestion API ] 
+         |
+         | 2. Validates payload structure
+         | 3. Generates unique Tracking ID
+         | 4. Writes record to State Ledger with status: "QUEUED"
+         | 5. Pushes Tracking ID + Payload Data into the Message Buffer
+         v
+  [ Ingestion API ] ---> Returns Instant Response ---> [ Client Application ]
+                                                        (HTTP Status: 202 Accepted)
+                                                        (Payload: {"tracking_id": "XYZ"})
+
+========================================================================================
+                             BUFFER & STORAGE LAYER (The Vault)
+========================================================================================
+
+  [ Message Buffer ] <--- Holds raw, unexecuted task references sequentially.
+                           Acts as a structural shock absorber.
+
+  [ State Ledger ]   <--- Persistent database. Holds the centralized truth of what 
+                           state ("QUEUED", "RUNNING", "DONE", "ERROR") a task is in.
+
+========================================================================================
+                             EXECUTION LAYER (The Factory Floor)
+========================================================================================
+
+  [ Message Buffer ]
+         |
+         | 6. Pulls next available task (Controlled Concurrency / Capped Throughput)
+         v
+  [ Processing Worker ]
+         |
+         | 7. Updates State Ledger entry to: "RUNNING"
+         | 8. Executes the heavy computation (Isolated from the Ingestion API)
+         | 9. Updates State Ledger entry to: "DONE" or "ERROR"
+         v
+  [ State Ledger ]
+
+========================================================================================
+                             OUTBOUND LAYER (The Follow-up)
+========================================================================================
+
+  [ Client Application ]
+         |
+         | 10. Check Status (Polls GET /status/XYZ or listens via open persistent socket)
+         v
+  [ Ingestion API ]
+         |
+         | 11. Reads current state directly from State Ledger
+         v
+  [ Ingestion API ] ---> Returns Response ---> [ Client Application ]
+                                                (HTTP Status: 200 OK)
+                                                (Payload: {"status": "RUNNING"})
