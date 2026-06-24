@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Async Job Scheduling</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="header-top">
+        <div class="header-inner">
+            <div class="header-logo">AsyncScheduler</div>
+            <div style="padding-top:10px;">
+                <a href="/">Home</a> |
+                <a href="/docs" target="_blank">Swagger API Docs</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Left: Main Content -->
+        <div class="main-content">
+            <div class="poll-status" id="lastUpdated">Updated just now</div>
+
+            <table class="datatable">
+                <thead>
+                    <tr>
+                        <th colspan="2">System Metrics</th>
+                    </tr>
+                </thead>
+                <tbody id="metricsTableBody">
+                    <tr>
+                        <td width="50%">Submitted Jobs</td>
+                        <td id="valSubmitted" style="font-weight:bold;">0</td>
+                    </tr>
+                    <tr>
+                        <td>Completed Jobs</td>
+                        <td id="valCompleted" class="val-success">0</td>
+                    </tr>
+                    <tr>
+                        <td>Failed Jobs</td>
+                        <td id="valFailed" class="val-danger">0</td>
+                    </tr>
+                    <tr>
+                        <td>Jobs Queued</td>
+                        <td id="valQueued" class="val-queued">0</td>
+                    </tr>
+                    <tr>
+                        <td>Jobs Running</td>
+                        <td id="valRunning" class="val-running">0</td>
+                    </tr>
+                    <tr>
+                        <td>Active Workers</td>
+                        <td id="valWorkers">0</td>
+                    </tr>
+                    <tr>
+                        <td>Total Retries</td>
+                        <td id="valRetries">0</td>
+                    </tr>
+                    <tr>
+                        <td>Avg Execution Time</td>
+                        <td id="valAvgTime">0 ms</td>
+                    </tr>
+                    <tr>
+                        <td>Success Rate</td>
+                        <td id="valSuccessRate">0%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Right: Sidebar -->
+        <div class="sidebar">
+            <div class="roundbox">
+                <div class="caption">Load Test Generator</div>
+                <div class="content">
+                    <p style="margin-top:0; font-size:12px; color:#555;">Trigger backend jobs automatically to populate
+                        the dashboard.</p>
+                    <form id="loadTestForm">
+                        <div class="form-group">
+                            <label for="duration">Duration:</label>
+                            <select id="duration">
+                                <option value="2">2 minutes</option>
+                                <option value="5">5 minutes</option>
+                                <option value="10">10 minutes</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn" id="submitBtn">Start Test</button>
+                    </form>
+                    <div id="testStatus" style="margin-top:10px; font-size:12px; color:#00a900; display:none;">
+                        Test started! Watch metrics update.
+                    </div>
+                </div>
+            </div>
+
+            <div class="roundbox">
+                <div class="caption">System Info</div>
+                <div class="content" style="font-size:12px; color:#555;">
+                    Polling every 2 seconds.<br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
