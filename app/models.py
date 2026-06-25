@@ -1,6 +1,5 @@
 """
-SQLAlchemy ORM models - mapped to the EXISTING database schema.
-These are READ-ONLY mirrors of what is in PostgreSQL. We do NOT call create_all().
+SQLAlchemy ORM models
 """
 import uuid
 from datetime import datetime

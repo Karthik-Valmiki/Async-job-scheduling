@@ -1,7 +1,3 @@
-"""
-API routes. No JWT auth - users are k6-generated and identified by user_id.
-Security: job lookups always filter by user_id to prevent IDOR.
-"""
 from fastapi import APIRouter, Depends, HTTPException, status, BackgroundTasks
 from sqlalchemy.orm import Session
 from sqlalchemy import select, func
