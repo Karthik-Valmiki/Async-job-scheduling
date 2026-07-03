@@ -1,0 +1,1098 @@
+16:17:23: Starting worker for 1 functions: process_job
+16:17:23: redis_version=5.0.14.1 mem_usage=726.06K clients_connected=2 db_keys=1
+16:18:01:   0.06s \u2192 40991026-7195-4d7e-bd0b-a8bea5d21bfd:process_job('40991026-7195-4d7e-bd0b-a8bea5d21bfd')
+16:18:02:   0.07s ! 40991026-7195-4d7e-bd0b-a8bea5d21bfd:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:02:   0.34s \u2192 0fb3c907-9a1d-488a-861a-f5bfd794242d:process_job('0fb3c907-9a1d-488a-861a-f5bfd794242d')
+16:18:02:   0.03s ! 0fb3c907-9a1d-488a-861a-f5bfd794242d:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:02:   0.14s \u2192 17a2d9af-0c8a-4aaa-b10b-69146878b5a2:process_job('17a2d9af-0c8a-4aaa-b10b-69146878b5a2')
+16:18:02:   0.41s \u2192 e96d5df2-ef2f-48b2-8557-af466110fde1:process_job('e96d5df2-ef2f-48b2-8557-af466110fde1')
+16:18:02:   0.21s \u2192 74fb7168-ea29-4f92-a5a2-c5405f2c0cf3:process_job('74fb7168-ea29-4f92-a5a2-c5405f2c0cf3')
+16:18:03:   0.47s \u2192 48e516c7-655d-4bf8-a1d4-fbf73869b29d:process_job('48e516c7-655d-4bf8-a1d4-fbf73869b29d')
+16:18:03:   0.26s \u2192 efa9cc07-54a2-4e90-8b56-6398fedaa34d:process_job('efa9cc07-54a2-4e90-8b56-6398fedaa34d')
+16:18:03:   0.04s \u2192 a3d2d284-a422-4f60-ba3d-52a4913e1bff:process_job('a3d2d284-a422-4f60-ba3d-52a4913e1bff')
+16:18:03:   0.31s \u2192 ad89604b-a591-4a5a-9dbe-8604b540a596:process_job('ad89604b-a591-4a5a-9dbe-8604b540a596')
+16:18:03:   0.10s \u2192 e73caba3-3fe5-44f1-910d-5c9fbccecfc8:process_job('e73caba3-3fe5-44f1-910d-5c9fbccecfc8')
+16:18:04:   1.52s \u2190 17a2d9af-0c8a-4aaa-b10b-69146878b5a2:process_job \u25cf 
+16:18:04:   0.38s \u2192 dcdef805-52f0-45e3-a490-78e3b6139365:process_job('dcdef805-52f0-45e3-a490-78e3b6139365')
+16:18:04:   1.54s \u2190 e96d5df2-ef2f-48b2-8557-af466110fde1:process_job \u25cf 
+16:18:04:   0.17s \u2192 e4278f6f-8afa-436f-bd4f-5ed0f9da4799:process_job('e4278f6f-8afa-436f-bd4f-5ed0f9da4799')
+16:18:04:   1.53s \u2190 74fb7168-ea29-4f92-a5a2-c5405f2c0cf3:process_job \u25cf 
+16:18:04:   1.52s \u2190 48e516c7-655d-4bf8-a1d4-fbf73869b29d:process_job \u25cf 
+16:18:05:   1.52s \u2190 efa9cc07-54a2-4e90-8b56-6398fedaa34d:process_job \u25cf 
+16:18:05:   1.52s \u2190 a3d2d284-a422-4f60-ba3d-52a4913e1bff:process_job \u25cf 
+16:18:05:   0.49s \u2192 d2682e24-88a9-4668-a4c6-e3356f308a9f:process_job('d2682e24-88a9-4668-a4c6-e3356f308a9f')
+16:18:05:   0.28s \u2192 c8330883-374b-4e0a-827a-a394e17a8453:process_job('c8330883-374b-4e0a-827a-a394e17a8453')
+16:18:05:   0.07s \u2192 a7881aca-f34c-4463-ac2b-4ff5dba5e291:process_job('a7881aca-f34c-4463-ac2b-4ff5dba5e291')
+16:18:05:   1.52s \u2190 ad89604b-a591-4a5a-9dbe-8604b540a596:process_job \u25cf 
+16:18:05:   1.53s \u2190 e73caba3-3fe5-44f1-910d-5c9fbccecfc8:process_job \u25cf 
+16:18:05:   0.34s \u2192 74717aca-66d7-4ae0-857a-cf4e6bc8bc88:process_job('74717aca-66d7-4ae0-857a-cf4e6bc8bc88')
+16:18:05:   0.16s \u2192 b478976d-1357-4dcf-8332-28f97024cd23:process_job('b478976d-1357-4dcf-8332-28f97024cd23')
+16:18:06:   1.53s \u2190 dcdef805-52f0-45e3-a490-78e3b6139365:process_job \u25cf 
+16:18:06:   0.38s \u2192 a37b733f-38af-4a66-9d5d-98844499d8d0:process_job('a37b733f-38af-4a66-9d5d-98844499d8d0')
+16:18:06:   1.53s \u2190 e4278f6f-8afa-436f-bd4f-5ed0f9da4799:process_job \u25cf 
+16:18:06:   0.17s \u2192 dc5a653b-e0ad-4d0c-9e07-39bc32ceaa96:process_job('dc5a653b-e0ad-4d0c-9e07-39bc32ceaa96')
+16:18:06:   0.45s \u2192 b93aa56b-d752-4ba5-b8f5-1b9cfae32599:process_job('b93aa56b-d752-4ba5-b8f5-1b9cfae32599')
+16:18:06:   1.52s \u2190 d2682e24-88a9-4668-a4c6-e3356f308a9f:process_job \u25cf 
+16:18:06:   0.23s \u2192 4d618414-a524-4e72-bf98-004b6737d4ab:process_job('4d618414-a524-4e72-bf98-004b6737d4ab')
+16:18:06:   0.01s ! 4d618414-a524-4e72-bf98-004b6737d4ab:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:06:   1.53s \u2190 c8330883-374b-4e0a-827a-a394e17a8453:process_job \u25cf 
+16:18:06:   1.53s \u2190 a7881aca-f34c-4463-ac2b-4ff5dba5e291:process_job \u25cf 
+16:18:07:   0.50s \u2192 7655c405-187c-4655-9815-48d8c000fd55:process_job('7655c405-187c-4655-9815-48d8c000fd55')
+16:18:07:   0.29s \u2192 4eddac5c-adb8-4d4c-aa59-ce87933c8d8a:process_job('4eddac5c-adb8-4d4c-aa59-ce87933c8d8a')
+16:18:07:   1.54s \u2190 74717aca-66d7-4ae0-857a-cf4e6bc8bc88:process_job \u25cf 
+16:18:07:   1.53s \u2190 b478976d-1357-4dcf-8332-28f97024cd23:process_job \u25cf 
+16:18:07:   1.54s \u2190 a37b733f-38af-4a66-9d5d-98844499d8d0:process_job \u25cf 
+16:18:07:   1.53s \u2190 dc5a653b-e0ad-4d0c-9e07-39bc32ceaa96:process_job \u25cf 
+16:18:07:   0.53s \u2192 51cf5165-eeb9-4f9b-a3f6-5ba757542513:process_job('51cf5165-eeb9-4f9b-a3f6-5ba757542513')
+16:18:07:   0.33s \u2192 bde3d6fd-397b-4bc7-a7e2-cd71cce63d45:process_job('bde3d6fd-397b-4bc7-a7e2-cd71cce63d45')
+16:18:07:   0.02s ! bde3d6fd-397b-4bc7-a7e2-cd71cce63d45:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:07:   0.11s \u2192 50fc358d-31f5-4816-82a0-71f1db3815fb:process_job('50fc358d-31f5-4816-82a0-71f1db3815fb')
+16:18:08:   1.53s \u2190 b93aa56b-d752-4ba5-b8f5-1b9cfae32599:process_job \u25cf 
+16:18:08:   0.36s \u2192 4bf51bb5-20fc-4a84-90c7-6b1caeacf5c8:process_job('4bf51bb5-20fc-4a84-90c7-6b1caeacf5c8')
+16:18:08:   0.14s \u2192 9cf3fad7-34c9-400a-808c-2b00102c1ec4:process_job('9cf3fad7-34c9-400a-808c-2b00102c1ec4')
+16:18:08:   1.52s \u2190 7655c405-187c-4655-9815-48d8c000fd55:process_job \u25cf 
+16:18:08:   1.52s \u2190 4eddac5c-adb8-4d4c-aa59-ce87933c8d8a:process_job \u25cf 
+16:18:08:   0.41s \u2192 3fe5e797-2db2-40ad-8a48-164825e7a289:process_job('3fe5e797-2db2-40ad-8a48-164825e7a289')
+16:18:08:   0.18s \u2192 27a12c78-64eb-4537-8ce8-96a1c8f3bcd0:process_job('27a12c78-64eb-4537-8ce8-96a1c8f3bcd0')
+16:18:08:   0.01s ! 27a12c78-64eb-4537-8ce8-96a1c8f3bcd0:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:09:   1.52s \u2190 51cf5165-eeb9-4f9b-a3f6-5ba757542513:process_job \u25cf 
+16:18:09:   0.48s \u2192 9d3f8322-f29c-425a-a425-d54f803bb988:process_job('9d3f8322-f29c-425a-a425-d54f803bb988')
+16:18:09:   5.40s \u2192 40991026-7195-4d7e-bd0b-a8bea5d21bfd_attempt_2:process_job('40991026-7195-4d7e-bd0b-a8bea5d21bfd')
+16:18:09:   1.52s \u2190 50fc358d-31f5-4816-82a0-71f1db3815fb:process_job \u25cf 
+16:18:09:   5.42s \u2192 0fb3c907-9a1d-488a-861a-f5bfd794242d_attempt_2:process_job('0fb3c907-9a1d-488a-861a-f5bfd794242d')
+16:18:09:   0.27s \u2192 e6c5dcdb-f594-402f-98ed-aa50a52beb9b:process_job('e6c5dcdb-f594-402f-98ed-aa50a52beb9b')
+16:18:09:   0.02s ! e6c5dcdb-f594-402f-98ed-aa50a52beb9b:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:09:   1.53s \u2190 4bf51bb5-20fc-4a84-90c7-6b1caeacf5c8:process_job \u25cf 
+16:18:09:   1.52s \u2190 9cf3fad7-34c9-400a-808c-2b00102c1ec4:process_job \u25cf 
+16:18:09:   0.52s \u2192 b763d3a0-c373-454b-a2de-b3d85a8710d9:process_job('b763d3a0-c373-454b-a2de-b3d85a8710d9')
+16:18:09:   0.32s \u2192 420b3040-894a-419b-98c9-50cbb92d018d:process_job('420b3040-894a-419b-98c9-50cbb92d018d')
+16:18:09:   0.11s \u2192 d2615e0e-b132-4ad7-aa11-ce7d2a9d7e71:process_job('d2615e0e-b132-4ad7-aa11-ce7d2a9d7e71')
+16:18:10:   1.53s \u2190 3fe5e797-2db2-40ad-8a48-164825e7a289:process_job \u25cf 
+16:18:10:   0.37s \u2192 e8becf1d-581f-4b6a-a73f-8e7af22620de:process_job('e8becf1d-581f-4b6a-a73f-8e7af22620de')
+16:18:10:   0.16s \u2192 3f638710-b0fe-4ea3-8d4e-4526a33676bc:process_job('3f638710-b0fe-4ea3-8d4e-4526a33676bc')
+16:18:10:   1.53s \u2190 9d3f8322-f29c-425a-a425-d54f803bb988:process_job \u25cf 
+16:18:10:   1.53s \u2190 40991026-7195-4d7e-bd0b-a8bea5d21bfd_attempt_2:process_job \u25cf 
+16:18:10:   1.52s \u2190 0fb3c907-9a1d-488a-861a-f5bfd794242d_attempt_2:process_job \u25cf 
+16:18:10:   0.47s \u2192 cb9b48a9-60e1-43d4-bb51-6b82a96ed829:process_job('cb9b48a9-60e1-43d4-bb51-6b82a96ed829')
+16:18:10:   0.25s \u2192 fa6b6483-1591-4d64-87ab-c4f01eea7250:process_job('fa6b6483-1591-4d64-87ab-c4f01eea7250')
+16:18:11:   1.52s \u2190 b763d3a0-c373-454b-a2de-b3d85a8710d9:process_job \u25cf 
+16:18:11:   1.52s \u2190 420b3040-894a-419b-98c9-50cbb92d018d:process_job \u25cf 
+16:18:11:   1.52s \u2190 d2615e0e-b132-4ad7-aa11-ce7d2a9d7e71:process_job \u25cf 
+16:18:11:   0.53s \u2192 e9c7b946-0ba8-41b6-8aed-8f1a689d51e4:process_job('e9c7b946-0ba8-41b6-8aed-8f1a689d51e4')
+16:18:11:   0.02s ! e9c7b946-0ba8-41b6-8aed-8f1a689d51e4:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:11:   0.34s \u2192 92aeebe1-a238-42b3-8932-e16d4b012029:process_job('92aeebe1-a238-42b3-8932-e16d4b012029')
+16:18:11:   0.13s \u2192 c665f6d2-c3f1-45df-8836-d01c3689d563:process_job('c665f6d2-c3f1-45df-8836-d01c3689d563')
+16:18:11:   1.52s \u2190 e8becf1d-581f-4b6a-a73f-8e7af22620de:process_job \u25cf 
+16:18:11:   1.52s \u2190 3f638710-b0fe-4ea3-8d4e-4526a33676bc:process_job \u25cf 
+16:18:11:   0.36s \u2192 1c5dae2e-d631-4648-b9dc-19c20a69e9a9:process_job('1c5dae2e-d631-4648-b9dc-19c20a69e9a9')
+16:18:11:   0.02s ! 1c5dae2e-d631-4648-b9dc-19c20a69e9a9:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:11:   0.15s \u2192 978843e4-378b-4744-88bb-5cd8235aae50:process_job('978843e4-378b-4744-88bb-5cd8235aae50')
+16:18:12:   0.41s \u2192 7775b28d-d47c-4093-a8da-f1c750e8ced4:process_job('7775b28d-d47c-4093-a8da-f1c750e8ced4')
+16:18:12:   1.53s \u2190 cb9b48a9-60e1-43d4-bb51-6b82a96ed829:process_job \u25cf 
+16:18:12:   1.53s \u2190 fa6b6483-1591-4d64-87ab-c4f01eea7250:process_job \u25cf 
+16:18:12:   0.22s \u2192 945866fc-5262-424b-af34-a62600ae7572:process_job('945866fc-5262-424b-af34-a62600ae7572')
+16:18:12:   0.02s ! 945866fc-5262-424b-af34-a62600ae7572:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:12:   0.46s \u2192 2d709bf9-727d-4b1a-97b9-524875482b6d:process_job('2d709bf9-727d-4b1a-97b9-524875482b6d')
+16:18:12:   0.25s \u2192 cbe5c8d4-b1f2-4a9c-908e-6c0464a4c804:process_job('cbe5c8d4-b1f2-4a9c-908e-6c0464a4c804')
+16:18:12:   0.03s ! cbe5c8d4-b1f2-4a9c-908e-6c0464a4c804:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:12:   1.53s \u2190 92aeebe1-a238-42b3-8932-e16d4b012029:process_job \u25cf 
+16:18:12:   1.53s \u2190 c665f6d2-c3f1-45df-8836-d01c3689d563:process_job \u25cf 
+16:18:13:   0.52s \u2192 7080752e-068a-49b7-8433-a4b65845cba3:process_job('7080752e-068a-49b7-8433-a4b65845cba3')
+16:18:13:   0.32s \u2192 45e8b81b-e6d2-4db8-a955-b449d790ef19:process_job('45e8b81b-e6d2-4db8-a955-b449d790ef19')
+16:18:13:   1.52s \u2190 978843e4-378b-4744-88bb-5cd8235aae50:process_job \u25cf 
+16:18:13:   0.11s \u2192 9028bb84-310c-4a58-ac97-992f62d1101b:process_job('9028bb84-310c-4a58-ac97-992f62d1101b')
+16:18:13:   0.01s ! 9028bb84-310c-4a58-ac97-992f62d1101b:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:13:   1.53s \u2190 7775b28d-d47c-4093-a8da-f1c750e8ced4:process_job \u25cf 
+16:18:13:   0.39s \u2192 e248382e-b1e7-4a53-91ba-3e513f1cee83:process_job('e248382e-b1e7-4a53-91ba-3e513f1cee83')
+16:18:13:   0.02s ! e248382e-b1e7-4a53-91ba-3e513f1cee83:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:13:   0.18s \u2192 41d7bea7-d742-4ede-8e9f-c6d9d1613f83:process_job('41d7bea7-d742-4ede-8e9f-c6d9d1613f83')
+16:18:14:   1.56s \u2190 2d709bf9-727d-4b1a-97b9-524875482b6d:process_job \u25cf 
+16:18:14:   0.48s \u2192 90a9d29e-0579-4f17-9ab1-7b08835fa449:process_job('90a9d29e-0579-4f17-9ab1-7b08835fa449')
+16:18:14:   0.03s ! 90a9d29e-0579-4f17-9ab1-7b08835fa449:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:14:   0.27s \u2192 3378c231-702a-488c-b361-d483794b9b58:process_job('3378c231-702a-488c-b361-d483794b9b58')
+16:18:14:   1.52s \u2190 7080752e-068a-49b7-8433-a4b65845cba3:process_job \u25cf 
+16:18:14:   1.52s \u2190 45e8b81b-e6d2-4db8-a955-b449d790ef19:process_job \u25cf 
+16:18:14:   0.48s \u2192 d0238954-80e6-40f8-b44c-25933bfc62fb:process_job('d0238954-80e6-40f8-b44c-25933bfc62fb')
+16:18:14:   0.02s ! d0238954-80e6-40f8-b44c-25933bfc62fb:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:14:   0.29s \u2192 b170ceb4-3aa3-4232-aee8-0e7690b45624:process_job('b170ceb4-3aa3-4232-aee8-0e7690b45624')
+16:18:14:   0.07s \u2192 257a7458-abb8-4a07-9e91-bdc1dff3011f:process_job('257a7458-abb8-4a07-9e91-bdc1dff3011f')
+16:18:14:   0.02s ! 257a7458-abb8-4a07-9e91-bdc1dff3011f:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:15:   0.31s \u2192 05c8fc6d-12bb-4c7a-84fe-5238b661777a:process_job('05c8fc6d-12bb-4c7a-84fe-5238b661777a')
+16:18:15:   0.09s \u2192 3ee70492-fde0-471a-8f3d-7adcc4d6034f:process_job('3ee70492-fde0-471a-8f3d-7adcc4d6034f')
+16:18:15:   0.02s ! 3ee70492-fde0-471a-8f3d-7adcc4d6034f:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:15:   1.52s \u2190 41d7bea7-d742-4ede-8e9f-c6d9d1613f83:process_job \u25cf 
+16:18:15:   0.37s \u2192 5b53f578-f067-40f1-bbac-1e488329bf86:process_job('5b53f578-f067-40f1-bbac-1e488329bf86')
+16:18:15:   0.16s \u2192 06da97cc-7a26-40a3-b65f-4ca15f4dd717:process_job('06da97cc-7a26-40a3-b65f-4ca15f4dd717')
+16:18:15:   1.53s \u2190 3378c231-702a-488c-b361-d483794b9b58:process_job \u25cf 
+16:18:16:   0.42s \u2192 87b62b7f-9410-49a5-91f9-32ea9080ee5c:process_job('87b62b7f-9410-49a5-91f9-32ea9080ee5c')
+16:18:16:   0.02s ! 87b62b7f-9410-49a5-91f9-32ea9080ee5c:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:16:   0.22s \u2192 fc88baa6-4823-4842-8272-561fcefcd86b:process_job('fc88baa6-4823-4842-8272-561fcefcd86b')
+16:18:16:   1.52s \u2190 b170ceb4-3aa3-4232-aee8-0e7690b45624:process_job \u25cf 
+16:18:16:   1.52s \u2190 05c8fc6d-12bb-4c7a-84fe-5238b661777a:process_job \u25cf 
+16:18:16:   0.50s \u2192 12c7f25c-f094-443f-89e2-5f09e971bf6c:process_job('12c7f25c-f094-443f-89e2-5f09e971bf6c')
+16:18:16:   0.29s \u2192 b59ac56a-bd88-4251-acef-ab8a9ecd04a7:process_job('b59ac56a-bd88-4251-acef-ab8a9ecd04a7')
+16:18:16:   0.07s \u2192 f74965e2-4696-40be-81aa-fcd67f5650f6:process_job('f74965e2-4696-40be-81aa-fcd67f5650f6')
+16:18:17:   1.53s \u2190 5b53f578-f067-40f1-bbac-1e488329bf86:process_job \u25cf 
+16:18:17:   1.52s \u2190 06da97cc-7a26-40a3-b65f-4ca15f4dd717:process_job \u25cf 
+16:18:17:   0.37s \u2192 d819eee5-bd73-4b2c-9ec3-6cd61521c16a:process_job('d819eee5-bd73-4b2c-9ec3-6cd61521c16a')
+16:18:17:   0.16s \u2192 b4f65d0f-e70a-41a3-a54d-519caf731bde:process_job('b4f65d0f-e70a-41a3-a54d-519caf731bde')
+16:18:17:   1.53s \u2190 fc88baa6-4823-4842-8272-561fcefcd86b:process_job \u25cf 
+16:18:17:   0.45s \u2192 1ba72451-05ea-45a3-a5f6-1786264410a3:process_job('1ba72451-05ea-45a3-a5f6-1786264410a3')
+16:18:17:   0.24s \u2192 bf8a5dec-8bdb-402a-af1a-012eb7ea3786:process_job('bf8a5dec-8bdb-402a-af1a-012eb7ea3786')
+16:18:18:   1.54s \u2190 12c7f25c-f094-443f-89e2-5f09e971bf6c:process_job \u25cf 
+16:18:18:   1.54s \u2190 b59ac56a-bd88-4251-acef-ab8a9ecd04a7:process_job \u25cf 
+16:18:18:   1.54s \u2190 f74965e2-4696-40be-81aa-fcd67f5650f6:process_job \u25cf 
+16:18:18:   0.54s \u2192 0080c54a-da8d-43f1-aa7d-c93656d21596:process_job('0080c54a-da8d-43f1-aa7d-c93656d21596')
+16:18:18:   0.34s \u2192 9fa17ec5-4b8f-48a0-a457-b7972862e585:process_job('9fa17ec5-4b8f-48a0-a457-b7972862e585')
+16:18:18:   0.02s ! 9fa17ec5-4b8f-48a0-a457-b7972862e585:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:18:   0.14s \u2192 d213d219-46e3-46a9-82e1-4724e6689df0:process_job('d213d219-46e3-46a9-82e1-4724e6689df0')
+16:18:18:   1.55s \u2190 d819eee5-bd73-4b2c-9ec3-6cd61521c16a:process_job \u25cf 
+16:18:18:   1.54s \u2190 b4f65d0f-e70a-41a3-a54d-519caf731bde:process_job \u25cf 
+16:18:18:   0.37s \u2192 728839f5-7525-4c7f-9dc9-386d50ca4269:process_job('728839f5-7525-4c7f-9dc9-386d50ca4269')
+16:18:18:   0.15s \u2192 23a7935b-7334-4ca2-b86e-14738cea6bd8:process_job('23a7935b-7334-4ca2-b86e-14738cea6bd8')
+16:18:18:   5.11s \u2192 27a12c78-64eb-4537-8ce8-96a1c8f3bcd0_attempt_2:process_job('27a12c78-64eb-4537-8ce8-96a1c8f3bcd0')
+16:18:18:   0.02s ! 27a12c78-64eb-4537-8ce8-96a1c8f3bcd0_attempt_2:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:18:   5.13s \u2192 4d618414-a524-4e72-bf98-004b6737d4ab_attempt_2:process_job('4d618414-a524-4e72-bf98-004b6737d4ab')
+16:18:18:   5.14s \u2192 bde3d6fd-397b-4bc7-a7e2-cd71cce63d45_attempt_2:process_job('bde3d6fd-397b-4bc7-a7e2-cd71cce63d45')
+16:18:18:   5.15s \u2192 e6c5dcdb-f594-402f-98ed-aa50a52beb9b_attempt_2:process_job('e6c5dcdb-f594-402f-98ed-aa50a52beb9b')
+16:18:18:   5.16s \u2192 e9c7b946-0ba8-41b6-8aed-8f1a689d51e4_attempt_2:process_job('e9c7b946-0ba8-41b6-8aed-8f1a689d51e4')
+16:18:18:   5.17s \u2192 1c5dae2e-d631-4648-b9dc-19c20a69e9a9_attempt_2:process_job('1c5dae2e-d631-4648-b9dc-19c20a69e9a9')
+16:18:18:   0.01s ! 1c5dae2e-d631-4648-b9dc-19c20a69e9a9_attempt_2:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:18:   5.18s \u2192 945866fc-5262-424b-af34-a62600ae7572_attempt_2:process_job('945866fc-5262-424b-af34-a62600ae7572')
+16:18:18:   5.19s \u2192 cbe5c8d4-b1f2-4a9c-908e-6c0464a4c804_attempt_2:process_job('cbe5c8d4-b1f2-4a9c-908e-6c0464a4c804')
+16:18:18:   5.20s \u2192 9028bb84-310c-4a58-ac97-992f62d1101b_attempt_2:process_job('9028bb84-310c-4a58-ac97-992f62d1101b')
+16:18:18:   5.20s \u2192 e248382e-b1e7-4a53-91ba-3e513f1cee83_attempt_2:process_job('e248382e-b1e7-4a53-91ba-3e513f1cee83')
+16:18:19:   1.53s \u2190 1ba72451-05ea-45a3-a5f6-1786264410a3:process_job \u25cf 
+16:18:19:   1.53s \u2190 bf8a5dec-8bdb-402a-af1a-012eb7ea3786:process_job \u25cf 
+16:18:19:   0.46s \u2192 ec485630-cc11-458c-b43a-4ff0aa516d22:process_job('ec485630-cc11-458c-b43a-4ff0aa516d22')
+16:18:19:   0.24s \u2192 cc15bb4f-b14e-477b-a136-1f4b0d8894a4:process_job('cc15bb4f-b14e-477b-a136-1f4b0d8894a4')
+16:18:19:   0.49s \u2192 a13b0ebe-b9df-4052-aa5e-049a299346b6:process_job('a13b0ebe-b9df-4052-aa5e-049a299346b6')
+16:18:19:   1.54s \u2190 0080c54a-da8d-43f1-aa7d-c93656d21596:process_job \u25cf 
+16:18:19:   0.31s \u2192 dde35c6d-2a84-413a-a07c-6ddd75da5bbb:process_job('dde35c6d-2a84-413a-a07c-6ddd75da5bbb')
+16:18:19:   0.10s \u2192 3a8725fb-9194-43fe-b0d5-f8d643d4b203:process_job('3a8725fb-9194-43fe-b0d5-f8d643d4b203')
+16:18:19:   1.52s \u2190 d213d219-46e3-46a9-82e1-4724e6689df0:process_job \u25cf 
+16:18:20:   0.33s \u2192 a0599668-c9c3-46ce-9fa0-11fcd07c0aaf:process_job('a0599668-c9c3-46ce-9fa0-11fcd07c0aaf')
+16:18:20:   1.52s \u2190 728839f5-7525-4c7f-9dc9-386d50ca4269:process_job \u25cf 
+16:18:20:   1.52s \u2190 23a7935b-7334-4ca2-b86e-14738cea6bd8:process_job \u25cf 
+16:18:20:   0.14s \u2192 3fb80616-0cb4-4c43-a792-9b41706d0e98:process_job('3fb80616-0cb4-4c43-a792-9b41706d0e98')
+16:18:20:   0.01s ! 3fb80616-0cb4-4c43-a792-9b41706d0e98:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:20:   1.54s \u2190 4d618414-a524-4e72-bf98-004b6737d4ab_attempt_2:process_job \u25cf 
+16:18:20:   1.53s \u2190 bde3d6fd-397b-4bc7-a7e2-cd71cce63d45_attempt_2:process_job \u25cf 
+16:18:20:   1.54s \u2190 e6c5dcdb-f594-402f-98ed-aa50a52beb9b_attempt_2:process_job \u25cf 
+16:18:20:   1.53s \u2190 e9c7b946-0ba8-41b6-8aed-8f1a689d51e4_attempt_2:process_job \u25cf 
+16:18:20:   1.52s \u2190 945866fc-5262-424b-af34-a62600ae7572_attempt_2:process_job \u25cf 
+16:18:20:   1.52s \u2190 cbe5c8d4-b1f2-4a9c-908e-6c0464a4c804_attempt_2:process_job \u25cf 
+16:18:20:   1.52s \u2190 9028bb84-310c-4a58-ac97-992f62d1101b_attempt_2:process_job \u25cf 
+16:18:20:   1.52s \u2190 e248382e-b1e7-4a53-91ba-3e513f1cee83_attempt_2:process_job \u25cf 
+16:18:20:   0.39s \u2192 f454880f-0b94-4031-9dc3-d324cac62d1f:process_job('f454880f-0b94-4031-9dc3-d324cac62d1f')
+16:18:20:   0.18s \u2192 a03af6ee-d7f6-4d46-9945-0935ba37db0d:process_job('a03af6ee-d7f6-4d46-9945-0935ba37db0d')
+16:18:20:   1.53s \u2190 ec485630-cc11-458c-b43a-4ff0aa516d22:process_job \u25cf 
+16:18:20:   1.52s \u2190 cc15bb4f-b14e-477b-a136-1f4b0d8894a4:process_job \u25cf 
+16:18:21:   0.47s \u2192 f91d8430-6bf4-49c7-af04-cf0d2ec31589:process_job('f91d8430-6bf4-49c7-af04-cf0d2ec31589')
+16:18:21:   1.53s \u2190 a13b0ebe-b9df-4052-aa5e-049a299346b6:process_job \u25cf 
+16:18:21:   0.28s \u2192 b8e8f535-5962-4cac-a922-b53674203795:process_job('b8e8f535-5962-4cac-a922-b53674203795')
+16:18:21:   1.53s \u2190 dde35c6d-2a84-413a-a07c-6ddd75da5bbb:process_job \u25cf 
+16:18:21:   1.53s \u2190 3a8725fb-9194-43fe-b0d5-f8d643d4b203:process_job \u25cf 
+16:18:21:   0.50s \u2192 8fa7d143-9fdd-42b0-bb94-c2665df377d3:process_job('8fa7d143-9fdd-42b0-bb94-c2665df377d3')
+16:18:21:   1.52s \u2190 a0599668-c9c3-46ce-9fa0-11fcd07c0aaf:process_job \u25cf 
+16:18:21:   0.29s \u2192 178de920-63ac-4489-942d-60cb046fa498:process_job('178de920-63ac-4489-942d-60cb046fa498')
+16:18:21:   0.01s ! 178de920-63ac-4489-942d-60cb046fa498:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:21:   0.09s \u2192 e5fa759b-1ae9-4c3d-8868-3003a3c56c3a:process_job('e5fa759b-1ae9-4c3d-8868-3003a3c56c3a')
+16:18:22:   1.53s \u2190 f454880f-0b94-4031-9dc3-d324cac62d1f:process_job \u25cf 
+16:18:22:   1.52s \u2190 a03af6ee-d7f6-4d46-9945-0935ba37db0d:process_job \u25cf 
+16:18:22:   0.37s \u2192 1b9ae31a-d324-453b-9857-874ac2d6ab37:process_job('1b9ae31a-d324-453b-9857-874ac2d6ab37')
+16:18:22:   0.15s \u2192 817ad48a-d03b-4a50-9c85-5c238355c7e0:process_job('817ad48a-d03b-4a50-9c85-5c238355c7e0')
+16:18:22:   1.53s \u2190 f91d8430-6bf4-49c7-af04-cf0d2ec31589:process_job \u25cf 
+16:18:22:   0.45s \u2192 4fc24ea0-d523-4a26-bcb1-eb03a54a4016:process_job('4fc24ea0-d523-4a26-bcb1-eb03a54a4016')
+16:18:22:   1.54s \u2190 b8e8f535-5962-4cac-a922-b53674203795:process_job \u25cf 
+16:18:22:   0.25s \u2192 b59185a9-c10e-4f64-aacd-2fb22fb2d9c3:process_job('b59185a9-c10e-4f64-aacd-2fb22fb2d9c3')
+16:18:22:   0.02s ! b59185a9-c10e-4f64-aacd-2fb22fb2d9c3:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:23:   1.54s \u2190 8fa7d143-9fdd-42b0-bb94-c2665df377d3:process_job \u25cf 
+16:18:23:   1.52s \u2190 e5fa759b-1ae9-4c3d-8868-3003a3c56c3a:process_job \u25cf 
+16:18:23:   0.54s \u2192 c7c6aa1f-fd27-444a-a1a2-1908a17b30b7:process_job('c7c6aa1f-fd27-444a-a1a2-1908a17b30b7')
+16:18:23:   0.34s \u2192 2445c2ad-5eca-44e4-bbd0-7aa09b7f1659:process_job('2445c2ad-5eca-44e4-bbd0-7aa09b7f1659')
+16:18:23:   0.12s \u2192 f89d80e3-9a90-4e87-bba3-bfd7c036019b:process_job('f89d80e3-9a90-4e87-bba3-bfd7c036019b')
+16:18:23:   1.53s \u2190 1b9ae31a-d324-453b-9857-874ac2d6ab37:process_job \u25cf 
+16:18:23:   1.53s \u2190 817ad48a-d03b-4a50-9c85-5c238355c7e0:process_job \u25cf 
+16:18:23:   0.39s \u2192 c3fb7b9f-ed9f-47b3-a09c-8ca874bf5883:process_job('c3fb7b9f-ed9f-47b3-a09c-8ca874bf5883')
+16:18:23:   0.17s \u2192 93303b48-9606-4c19-bfae-4513dcc8c516:process_job('93303b48-9606-4c19-bfae-4513dcc8c516')
+16:18:24:   1.54s \u2190 4fc24ea0-d523-4a26-bcb1-eb03a54a4016:process_job \u25cf 
+16:18:24:   0.44s \u2192 a30e794a-aade-408a-9487-0349107d4915:process_job('a30e794a-aade-408a-9487-0349107d4915')
+16:18:24:   0.23s \u2192 548f87e7-44f9-45d1-8077-fa94d1c2fdab:process_job('548f87e7-44f9-45d1-8077-fa94d1c2fdab')
+16:18:24:   1.53s \u2190 c7c6aa1f-fd27-444a-a1a2-1908a17b30b7:process_job \u25cf 
+16:18:24:   1.52s \u2190 2445c2ad-5eca-44e4-bbd0-7aa09b7f1659:process_job \u25cf 
+16:18:24:   1.52s \u2190 f89d80e3-9a90-4e87-bba3-bfd7c036019b:process_job \u25cf 
+16:18:24:   0.51s \u2192 030a3993-6a51-4524-a0ac-3520ac4b4c05:process_job('030a3993-6a51-4524-a0ac-3520ac4b4c05')
+16:18:24:   0.30s \u2192 8e6a947b-0180-4adb-bc40-19e498f2a123:process_job('8e6a947b-0180-4adb-bc40-19e498f2a123')
+16:18:24:   0.10s \u2192 44bcf8df-c85f-4a92-bfe6-6a441750a863:process_job('44bcf8df-c85f-4a92-bfe6-6a441750a863')
+16:18:24:   0.01s ! 44bcf8df-c85f-4a92-bfe6-6a441750a863:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:25:   1.53s \u2190 c3fb7b9f-ed9f-47b3-a09c-8ca874bf5883:process_job \u25cf 
+16:18:25:   1.53s \u2190 93303b48-9606-4c19-bfae-4513dcc8c516:process_job \u25cf 
+16:18:25:   0.38s \u2192 ff172890-d4e4-47b9-addb-3f8b6608d122:process_job('ff172890-d4e4-47b9-addb-3f8b6608d122')
+16:18:25:   0.03s ! ff172890-d4e4-47b9-addb-3f8b6608d122:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:25:   0.17s \u2192 7f6c1752-baa3-476d-89a7-d7af494e904c:process_job('7f6c1752-baa3-476d-89a7-d7af494e904c')
+16:18:25:   0.37s \u2192 16a811cc-3c84-4a18-b930-f750a9da626a:process_job('16a811cc-3c84-4a18-b930-f750a9da626a')
+16:18:25:   0.16s \u2192 99f2db87-af4e-4db6-9386-544c065dcf38:process_job('99f2db87-af4e-4db6-9386-544c065dcf38')
+16:18:25:   1.53s \u2190 a30e794a-aade-408a-9487-0349107d4915:process_job \u25cf 
+16:18:25:   1.53s \u2190 548f87e7-44f9-45d1-8077-fa94d1c2fdab:process_job \u25cf 
+16:18:26:   0.45s \u2192 9a0568ce-d4a5-4cf4-8ea3-3af77ecd1ad1:process_job('9a0568ce-d4a5-4cf4-8ea3-3af77ecd1ad1')
+16:18:26:   0.24s \u2192 5b97b279-f3d1-465a-a182-a484a1fcbfed:process_job('5b97b279-f3d1-465a-a182-a484a1fcbfed')
+16:18:26:   0.02s ! 5b97b279-f3d1-465a-a182-a484a1fcbfed:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:26:   1.53s \u2190 030a3993-6a51-4524-a0ac-3520ac4b4c05:process_job \u25cf 
+16:18:26:   1.52s \u2190 8e6a947b-0180-4adb-bc40-19e498f2a123:process_job \u25cf 
+16:18:26:   0.50s \u2192 f2f4f4e8-8cf2-40c5-8e38-9dbdeb3ca9e7:process_job('f2f4f4e8-8cf2-40c5-8e38-9dbdeb3ca9e7')
+16:18:26:   0.29s \u2192 de1b4848-2b55-46a6-80dd-37ea2fb4e555:process_job('de1b4848-2b55-46a6-80dd-37ea2fb4e555')
+16:18:26:   0.07s \u2192 a43c5000-1282-4b3e-8407-bb3a033abe3f:process_job('a43c5000-1282-4b3e-8407-bb3a033abe3f')
+16:18:27:   1.52s \u2190 7f6c1752-baa3-476d-89a7-d7af494e904c:process_job \u25cf 
+16:18:27:   1.54s \u2190 16a811cc-3c84-4a18-b930-f750a9da626a:process_job \u25cf 
+16:18:27:   1.53s \u2190 99f2db87-af4e-4db6-9386-544c065dcf38:process_job \u25cf 
+16:18:27:   0.36s \u2192 f1a33896-2a28-4f32-b4f2-c998ad6695b7:process_job('f1a33896-2a28-4f32-b4f2-c998ad6695b7')
+16:18:27:   0.15s \u2192 9bfd0bc5-8ba5-4a8a-930e-7ad3caf3715a:process_job('9bfd0bc5-8ba5-4a8a-930e-7ad3caf3715a')
+16:18:27:   1.53s \u2190 9a0568ce-d4a5-4cf4-8ea3-3af77ecd1ad1:process_job \u25cf 
+16:18:27:   0.43s \u2192 ccdd44da-6344-4a95-9949-05a404210331:process_job('ccdd44da-6344-4a95-9949-05a404210331')
+16:18:27:   0.22s \u2192 75aadf55-b618-4c16-a34e-03aae622ab79:process_job('75aadf55-b618-4c16-a34e-03aae622ab79')
+16:18:28:   1.54s \u2190 f2f4f4e8-8cf2-40c5-8e38-9dbdeb3ca9e7:process_job \u25cf 
+16:18:28:   1.53s \u2190 de1b4848-2b55-46a6-80dd-37ea2fb4e555:process_job \u25cf 
+16:18:28:   1.53s \u2190 a43c5000-1282-4b3e-8407-bb3a033abe3f:process_job \u25cf 
+16:18:28:   0.51s \u2192 6e7d8883-f120-4391-95b8-d03412d6c5fa:process_job('6e7d8883-f120-4391-95b8-d03412d6c5fa')
+16:18:28:   0.29s \u2192 53535460-26b5-44c2-aab7-d3910c63d3a7:process_job('53535460-26b5-44c2-aab7-d3910c63d3a7')
+16:18:28:   0.01s ! 53535460-26b5-44c2-aab7-d3910c63d3a7:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:28:   0.07s \u2192 464818fc-26ba-473c-b006-3d743255fa96:process_job('464818fc-26ba-473c-b006-3d743255fa96')
+16:18:28:   0.01s ! 464818fc-26ba-473c-b006-3d743255fa96:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:29:   1.55s \u2190 f1a33896-2a28-4f32-b4f2-c998ad6695b7:process_job \u25cf 
+16:18:29:   1.54s \u2190 9bfd0bc5-8ba5-4a8a-930e-7ad3caf3715a:process_job \u25cf 
+16:18:29:   0.37s \u2192 f85e7006-8679-4593-ade6-79c15494c44b:process_job('f85e7006-8679-4593-ade6-79c15494c44b')
+16:18:29:   5.29s \u2192 90a9d29e-0579-4f17-9ab1-7b08835fa449_attempt_2:process_job('90a9d29e-0579-4f17-9ab1-7b08835fa449')
+16:18:29:   5.30s \u2192 3ee70492-fde0-471a-8f3d-7adcc4d6034f_attempt_2:process_job('3ee70492-fde0-471a-8f3d-7adcc4d6034f')
+16:18:29:   5.30s \u2192 87b62b7f-9410-49a5-91f9-32ea9080ee5c_attempt_2:process_job('87b62b7f-9410-49a5-91f9-32ea9080ee5c')
+16:18:29:   5.31s \u2192 d0238954-80e6-40f8-b44c-25933bfc62fb_attempt_2:process_job('d0238954-80e6-40f8-b44c-25933bfc62fb')
+16:18:29:   5.32s \u2192 257a7458-abb8-4a07-9e91-bdc1dff3011f_attempt_2:process_job('257a7458-abb8-4a07-9e91-bdc1dff3011f')
+16:18:29:   5.32s \u2192 9fa17ec5-4b8f-48a0-a457-b7972862e585_attempt_2:process_job('9fa17ec5-4b8f-48a0-a457-b7972862e585')
+16:18:29:   5.33s \u2192 b59185a9-c10e-4f64-aacd-2fb22fb2d9c3_attempt_2:process_job('b59185a9-c10e-4f64-aacd-2fb22fb2d9c3')
+16:18:29:   0.01s ! b59185a9-c10e-4f64-aacd-2fb22fb2d9c3_attempt_2:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:29:   5.34s \u2192 178de920-63ac-4489-942d-60cb046fa498_attempt_2:process_job('178de920-63ac-4489-942d-60cb046fa498')
+16:18:29:   5.35s \u2192 3fb80616-0cb4-4c43-a792-9b41706d0e98_attempt_2:process_job('3fb80616-0cb4-4c43-a792-9b41706d0e98')
+16:18:29:   0.01s ! 3fb80616-0cb4-4c43-a792-9b41706d0e98_attempt_2:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:29:   0.26s \u2192 9685f1ac-1f03-46e1-83fb-b9237544cd5e:process_job('9685f1ac-1f03-46e1-83fb-b9237544cd5e')
+16:18:29:   0.01s ! 9685f1ac-1f03-46e1-83fb-b9237544cd5e:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:29:   1.53s \u2190 ccdd44da-6344-4a95-9949-05a404210331:process_job \u25cf 
+16:18:29:   1.53s \u2190 75aadf55-b618-4c16-a34e-03aae622ab79:process_job \u25cf 
+16:18:29:   0.43s \u2192 88340696-9fe4-40b8-9cd6-0819e6ad439a:process_job('88340696-9fe4-40b8-9cd6-0819e6ad439a')
+16:18:29:   0.21s \u2192 363eb23f-edd5-48a6-8a19-7f29870c5446:process_job('363eb23f-edd5-48a6-8a19-7f29870c5446')
+16:18:30:   1.53s \u2190 6e7d8883-f120-4391-95b8-d03412d6c5fa:process_job \u25cf 
+16:18:30:   0.49s \u2192 0037c627-f7c0-4cca-9ae9-2c0db2c43fdf:process_job('0037c627-f7c0-4cca-9ae9-2c0db2c43fdf')
+16:18:30:   0.03s ! 0037c627-f7c0-4cca-9ae9-2c0db2c43fdf:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:30:   0.29s \u2192 33b643a9-c3fa-46d7-8104-9d65475dfbbb:process_job('33b643a9-c3fa-46d7-8104-9d65475dfbbb')
+16:18:30:   0.08s \u2192 bf43cfa8-5ada-47d4-81f1-76396afe013c:process_job('bf43cfa8-5ada-47d4-81f1-76396afe013c')
+16:18:30:   0.03s ! bf43cfa8-5ada-47d4-81f1-76396afe013c:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:30:   1.53s \u2190 f85e7006-8679-4593-ade6-79c15494c44b:process_job \u25cf 
+16:18:30:   1.53s \u2190 90a9d29e-0579-4f17-9ab1-7b08835fa449_attempt_2:process_job \u25cf 
+16:18:30:   1.55s \u2190 3ee70492-fde0-471a-8f3d-7adcc4d6034f_attempt_2:process_job \u25cf 
+16:18:30:   1.54s \u2190 87b62b7f-9410-49a5-91f9-32ea9080ee5c_attempt_2:process_job \u25cf 
+16:18:30:   1.56s \u2190 d0238954-80e6-40f8-b44c-25933bfc62fb_attempt_2:process_job \u25cf 
+16:18:30:   1.56s \u2190 257a7458-abb8-4a07-9e91-bdc1dff3011f_attempt_2:process_job \u25cf 
+16:18:30:   1.55s \u2190 9fa17ec5-4b8f-48a0-a457-b7972862e585_attempt_2:process_job \u25cf 
+16:18:30:   1.53s \u2190 178de920-63ac-4489-942d-60cb046fa498_attempt_2:process_job \u25cf 
+16:18:30:   0.43s \u2192 d2b23ed9-35de-4e75-a679-525793a799f0:process_job('d2b23ed9-35de-4e75-a679-525793a799f0')
+16:18:30:   0.21s \u2192 10d7a1bf-a1c7-4507-b172-8f80b1dfd6cd:process_job('10d7a1bf-a1c7-4507-b172-8f80b1dfd6cd')
+16:18:30:   0.01s ! 10d7a1bf-a1c7-4507-b172-8f80b1dfd6cd:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:31:   1.53s \u2190 88340696-9fe4-40b8-9cd6-0819e6ad439a:process_job \u25cf 
+16:18:31:   0.39s \u2192 81944132-b449-4d68-bc29-64b8496c0595:process_job('81944132-b449-4d68-bc29-64b8496c0595')
+16:18:31:   0.05s ! 81944132-b449-4d68-bc29-64b8496c0595:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:31:   1.56s \u2190 363eb23f-edd5-48a6-8a19-7f29870c5446:process_job \u25cf 
+16:18:31:   0.20s \u2192 cf4f043a-0709-4612-b44b-63285e69f857:process_job('cf4f043a-0709-4612-b44b-63285e69f857')
+16:18:31:   0.41s \u2192 699f60f0-7ac1-4559-ba73-0ba93c81c61d:process_job('699f60f0-7ac1-4559-ba73-0ba93c81c61d')
+16:18:31:   0.21s \u2192 82ffd4ee-41c4-460c-997e-520d22951158:process_job('82ffd4ee-41c4-460c-997e-520d22951158')
+16:18:31:   1.53s \u2190 33b643a9-c3fa-46d7-8104-9d65475dfbbb:process_job \u25cf 
+16:18:32:   0.46s \u2192 4aa5c1e2-45f1-445c-a4cf-6bd98bc4c725:process_job('4aa5c1e2-45f1-445c-a4cf-6bd98bc4c725')
+16:18:32:   0.26s \u2192 72fb5c3b-9725-4039-bec5-b848accb431b:process_job('72fb5c3b-9725-4039-bec5-b848accb431b')
+16:18:32:   0.03s \u2192 53033b02-3db9-4698-a2db-81b68dcdf4a8:process_job('53033b02-3db9-4698-a2db-81b68dcdf4a8')
+16:18:32:   1.52s \u2190 d2b23ed9-35de-4e75-a679-525793a799f0:process_job \u25cf 
+16:18:32:   0.32s \u2192 36694279-f0ca-434b-b126-e19823d17339:process_job('36694279-f0ca-434b-b126-e19823d17339')
+16:18:32:   0.09s \u2192 e0af4ebb-2cf8-4468-ab90-2cc6a2136c4f:process_job('e0af4ebb-2cf8-4468-ab90-2cc6a2136c4f')
+16:18:32:   1.53s \u2190 cf4f043a-0709-4612-b44b-63285e69f857:process_job \u25cf 
+16:18:33:   0.38s \u2192 33fc1c6f-6387-44bb-b013-58cf1a29faee:process_job('33fc1c6f-6387-44bb-b013-58cf1a29faee')
+16:18:33:   0.16s \u2192 e30d0404-0c53-41ad-b7b5-dfd76e52a432:process_job('e30d0404-0c53-41ad-b7b5-dfd76e52a432')
+16:18:33:   0.02s ! e30d0404-0c53-41ad-b7b5-dfd76e52a432:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:33:   1.54s \u2190 699f60f0-7ac1-4559-ba73-0ba93c81c61d:process_job \u25cf 
+16:18:33:   1.54s \u2190 82ffd4ee-41c4-460c-997e-520d22951158:process_job \u25cf 
+16:18:33:   1.52s \u2190 4aa5c1e2-45f1-445c-a4cf-6bd98bc4c725:process_job \u25cf 
+16:18:33:   1.53s \u2190 72fb5c3b-9725-4039-bec5-b848accb431b:process_job \u25cf 
+16:18:33:   1.53s \u2190 53033b02-3db9-4698-a2db-81b68dcdf4a8:process_job \u25cf 
+16:18:33:   0.48s \u2192 9dfbf67f-a20f-4db8-b12a-cca99490325e:process_job('9dfbf67f-a20f-4db8-b12a-cca99490325e')
+16:18:33:   0.26s \u2192 091d1069-ed31-4fb2-9def-ce6252247e54:process_job('091d1069-ed31-4fb2-9def-ce6252247e54')
+16:18:33:   0.01s ! 091d1069-ed31-4fb2-9def-ce6252247e54:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:34:   1.54s \u2190 36694279-f0ca-434b-b126-e19823d17339:process_job \u25cf 
+16:18:34:   1.53s \u2190 e0af4ebb-2cf8-4468-ab90-2cc6a2136c4f:process_job \u25cf 
+16:18:34:   0.54s \u2192 71275475-ca2d-4103-a317-f288f9a347ce:process_job('71275475-ca2d-4103-a317-f288f9a347ce')
+16:18:34:   0.33s \u2192 094377e3-ac00-4fe0-8a2e-e8f523201b84:process_job('094377e3-ac00-4fe0-8a2e-e8f523201b84')
+16:18:34:   0.11s \u2192 67ee5503-d47a-4666-bd89-c90d2bea8b30:process_job('67ee5503-d47a-4666-bd89-c90d2bea8b30')
+16:18:34:   1.52s \u2190 33fc1c6f-6387-44bb-b013-58cf1a29faee:process_job \u25cf 
+16:18:34:   0.36s \u2192 2f6b5660-c427-4052-9be1-9f2c8162dd9c:process_job('2f6b5660-c427-4052-9be1-9f2c8162dd9c')
+16:18:34:   0.14s \u2192 4eedfb67-e20e-4cf5-a50e-ec8690f764ab:process_job('4eedfb67-e20e-4cf5-a50e-ec8690f764ab')
+16:18:35:   0.42s \u2192 dd0b268e-7a4e-4b23-b742-eead9f8cd1e1:process_job('dd0b268e-7a4e-4b23-b742-eead9f8cd1e1')
+16:18:35:   1.52s \u2190 9dfbf67f-a20f-4db8-b12a-cca99490325e:process_job \u25cf 
+16:18:35:   0.22s \u2192 3a34b6d9-4838-4f10-aba1-0c6d4d1e2910:process_job('3a34b6d9-4838-4f10-aba1-0c6d4d1e2910')
+16:18:35:   1.52s \u2190 71275475-ca2d-4103-a317-f288f9a347ce:process_job \u25cf 
+16:18:35:   1.53s \u2190 094377e3-ac00-4fe0-8a2e-e8f523201b84:process_job \u25cf 
+16:18:35:   1.54s \u2190 67ee5503-d47a-4666-bd89-c90d2bea8b30:process_job \u25cf 
+16:18:35:   0.55s \u2192 72e59b81-36d8-4915-a80c-e09c09e20f1e:process_job('72e59b81-36d8-4915-a80c-e09c09e20f1e')
+16:18:35:   0.34s \u2192 d7de2db7-0f30-4dd5-9c3a-d6cb357469f3:process_job('d7de2db7-0f30-4dd5-9c3a-d6cb357469f3')
+16:18:35:   0.12s \u2192 ee244e4b-3b55-4a6e-9584-91e34f9f7a34:process_job('ee244e4b-3b55-4a6e-9584-91e34f9f7a34')
+16:18:36:   1.56s \u2190 2f6b5660-c427-4052-9be1-9f2c8162dd9c:process_job \u25cf 
+16:18:36:   1.54s \u2190 4eedfb67-e20e-4cf5-a50e-ec8690f764ab:process_job \u25cf 
+16:18:36:   0.36s \u2192 791a84d5-74f8-44c2-936e-6d1281f7a7f3:process_job('791a84d5-74f8-44c2-936e-6d1281f7a7f3')
+16:18:36:   0.16s \u2192 1d4bc147-cc92-45d7-beb2-cf4ee7fc166c:process_job('1d4bc147-cc92-45d7-beb2-cf4ee7fc166c')
+16:18:36:   1.53s \u2190 dd0b268e-7a4e-4b23-b742-eead9f8cd1e1:process_job \u25cf 
+16:18:36:   1.53s \u2190 3a34b6d9-4838-4f10-aba1-0c6d4d1e2910:process_job \u25cf 
+16:18:36:   0.42s \u2192 7488751b-fe53-4d88-9d7c-dc47b883b142:process_job('7488751b-fe53-4d88-9d7c-dc47b883b142')
+16:18:36:   0.20s \u2192 3d2f08e8-dec5-40cf-948e-185df1f1665e:process_job('3d2f08e8-dec5-40cf-948e-185df1f1665e')
+16:18:37:   0.44s \u2192 6d73458c-8947-4e87-8c8d-c87990c06acd:process_job('6d73458c-8947-4e87-8c8d-c87990c06acd')
+16:18:37:   0.23s \u2192 14f383d8-3c30-44ed-8ec3-ee41600fae99:process_job('14f383d8-3c30-44ed-8ec3-ee41600fae99')
+16:18:37:   0.04s ! 14f383d8-3c30-44ed-8ec3-ee41600fae99:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:37:   1.58s \u2190 72e59b81-36d8-4915-a80c-e09c09e20f1e:process_job \u25cf 
+16:18:37:   1.57s \u2190 d7de2db7-0f30-4dd5-9c3a-d6cb357469f3:process_job \u25cf 
+16:18:37:   1.55s \u2190 ee244e4b-3b55-4a6e-9584-91e34f9f7a34:process_job \u25cf 
+16:18:37:   0.46s \u2192 58e396da-ccec-4993-a731-3ddc09568b5a:process_job('58e396da-ccec-4993-a731-3ddc09568b5a')
+16:18:37:   0.26s \u2192 68651528-661e-4d2e-b650-dd49e1ee74ee:process_job('68651528-661e-4d2e-b650-dd49e1ee74ee')
+16:18:37:   0.01s ! 68651528-661e-4d2e-b650-dd49e1ee74ee:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:37:   0.06s \u2192 ab08c579-83f7-4b5d-aa65-ce31dcc77139:process_job('ab08c579-83f7-4b5d-aa65-ce31dcc77139')
+16:18:37:   1.53s \u2190 791a84d5-74f8-44c2-936e-6d1281f7a7f3:process_job \u25cf 
+16:18:37:   1.52s \u2190 1d4bc147-cc92-45d7-beb2-cf4ee7fc166c:process_job \u25cf 
+16:18:38:   0.33s \u2192 18fb55e3-4f1b-4bce-a709-edaaf93e08e9:process_job('18fb55e3-4f1b-4bce-a709-edaaf93e08e9')
+16:18:38:   0.12s \u2192 8da542be-e8cf-42ff-aa2a-c03f3fd5ad32:process_job('8da542be-e8cf-42ff-aa2a-c03f3fd5ad32')
+16:18:38:   1.53s \u2190 7488751b-fe53-4d88-9d7c-dc47b883b142:process_job \u25cf 
+16:18:38:   1.52s \u2190 3d2f08e8-dec5-40cf-948e-185df1f1665e:process_job \u25cf 
+16:18:38:   0.40s \u2192 19161e27-637a-4c7a-9ee5-953dde82ac54:process_job('19161e27-637a-4c7a-9ee5-953dde82ac54')
+16:18:38:   1.54s \u2190 6d73458c-8947-4e87-8c8d-c87990c06acd:process_job \u25cf 
+16:18:38:   0.19s \u2192 4e060609-bf21-4ae5-b033-554eb5a6f140:process_job('4e060609-bf21-4ae5-b033-554eb5a6f140')
+16:18:39:   1.53s \u2190 58e396da-ccec-4993-a731-3ddc09568b5a:process_job \u25cf 
+16:18:39:   0.46s \u2192 4f771234-f756-4092-a374-52502814e178:process_job('4f771234-f756-4092-a374-52502814e178')
+16:18:39:   1.53s \u2190 ab08c579-83f7-4b5d-aa65-ce31dcc77139:process_job \u25cf 
+16:18:39:   0.02s ! 4f771234-f756-4092-a374-52502814e178:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:39:   5.36s \u2192 10d7a1bf-a1c7-4507-b172-8f80b1dfd6cd_attempt_2:process_job('10d7a1bf-a1c7-4507-b172-8f80b1dfd6cd')
+16:18:39:   5.37s \u2192 5b97b279-f3d1-465a-a182-a484a1fcbfed_attempt_2:process_job('5b97b279-f3d1-465a-a182-a484a1fcbfed')
+16:18:39:   5.38s \u2192 bf43cfa8-5ada-47d4-81f1-76396afe013c_attempt_2:process_job('bf43cfa8-5ada-47d4-81f1-76396afe013c')
+16:18:39:   0.01s ! bf43cfa8-5ada-47d4-81f1-76396afe013c_attempt_2:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:39:   5.39s \u2192 9685f1ac-1f03-46e1-83fb-b9237544cd5e_attempt_2:process_job('9685f1ac-1f03-46e1-83fb-b9237544cd5e')
+16:18:39:   5.40s \u2192 44bcf8df-c85f-4a92-bfe6-6a441750a863_attempt_2:process_job('44bcf8df-c85f-4a92-bfe6-6a441750a863')
+16:18:39:   5.41s \u2192 ff172890-d4e4-47b9-addb-3f8b6608d122_attempt_2:process_job('ff172890-d4e4-47b9-addb-3f8b6608d122')
+16:18:39:   5.42s \u2192 e30d0404-0c53-41ad-b7b5-dfd76e52a432_attempt_2:process_job('e30d0404-0c53-41ad-b7b5-dfd76e52a432')
+16:18:39:   5.43s \u2192 0037c627-f7c0-4cca-9ae9-2c0db2c43fdf_attempt_2:process_job('0037c627-f7c0-4cca-9ae9-2c0db2c43fdf')
+16:18:39:   5.44s \u2192 81944132-b449-4d68-bc29-64b8496c0595_attempt_2:process_job('81944132-b449-4d68-bc29-64b8496c0595')
+16:18:39:   5.45s \u2192 091d1069-ed31-4fb2-9def-ce6252247e54_attempt_2:process_job('091d1069-ed31-4fb2-9def-ce6252247e54')
+16:18:39:   5.46s \u2192 53535460-26b5-44c2-aab7-d3910c63d3a7_attempt_2:process_job('53535460-26b5-44c2-aab7-d3910c63d3a7')
+16:18:39:   5.47s \u2192 464818fc-26ba-473c-b006-3d743255fa96_attempt_2:process_job('464818fc-26ba-473c-b006-3d743255fa96')
+16:18:39:   0.38s \u2192 17df6d1d-f257-4b4e-b2a2-e8e60e9272d0:process_job('17df6d1d-f257-4b4e-b2a2-e8e60e9272d0')
+16:18:39:   0.17s \u2192 657e5a37-f318-4b04-9d5a-0e6a198fab83:process_job('657e5a37-f318-4b04-9d5a-0e6a198fab83')
+16:18:39:   0.02s ! 657e5a37-f318-4b04-9d5a-0e6a198fab83:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:39:   1.53s \u2190 18fb55e3-4f1b-4bce-a709-edaaf93e08e9:process_job \u25cf 
+16:18:39:   1.52s \u2190 8da542be-e8cf-42ff-aa2a-c03f3fd5ad32:process_job \u25cf 
+16:18:39:   0.32s \u2192 608100ff-7acc-4bdd-86e3-697a454b8a02:process_job('608100ff-7acc-4bdd-86e3-697a454b8a02')
+16:18:39:   0.02s ! 608100ff-7acc-4bdd-86e3-697a454b8a02:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:39:   0.12s \u2192 0d84b9e6-6b49-4520-976d-4c4a96fc2e49:process_job('0d84b9e6-6b49-4520-976d-4c4a96fc2e49')
+16:18:40:   1.54s \u2190 19161e27-637a-4c7a-9ee5-953dde82ac54:process_job \u25cf 
+16:18:40:   1.54s \u2190 4e060609-bf21-4ae5-b033-554eb5a6f140:process_job \u25cf 
+16:18:40:   0.43s \u2192 afa39d75-facd-4d33-83f3-3c59a660b76e:process_job('afa39d75-facd-4d33-83f3-3c59a660b76e')
+16:18:40:   0.23s \u2192 96b95301-6347-4304-ac33-71482f14816a:process_job('96b95301-6347-4304-ac33-71482f14816a')
+16:18:40:   1.56s \u2190 10d7a1bf-a1c7-4507-b172-8f80b1dfd6cd_attempt_2:process_job \u25cf 
+16:18:40:   1.55s \u2190 5b97b279-f3d1-465a-a182-a484a1fcbfed_attempt_2:process_job \u25cf 
+16:18:40:   1.54s \u2190 9685f1ac-1f03-46e1-83fb-b9237544cd5e_attempt_2:process_job \u25cf 
+16:18:40:   1.53s \u2190 44bcf8df-c85f-4a92-bfe6-6a441750a863_attempt_2:process_job \u25cf 
+16:18:40:   1.53s \u2190 ff172890-d4e4-47b9-addb-3f8b6608d122_attempt_2:process_job \u25cf 
+16:18:40:   1.53s \u2190 e30d0404-0c53-41ad-b7b5-dfd76e52a432_attempt_2:process_job \u25cf 
+16:18:40:   1.52s \u2190 0037c627-f7c0-4cca-9ae9-2c0db2c43fdf_attempt_2:process_job \u25cf 
+16:18:40:   1.52s \u2190 81944132-b449-4d68-bc29-64b8496c0595_attempt_2:process_job \u25cf 
+16:18:40:   1.52s \u2190 091d1069-ed31-4fb2-9def-ce6252247e54_attempt_2:process_job \u25cf 
+16:18:40:   1.51s \u2190 53535460-26b5-44c2-aab7-d3910c63d3a7_attempt_2:process_job \u25cf 
+16:18:40:   1.52s \u2190 464818fc-26ba-473c-b006-3d743255fa96_attempt_2:process_job \u25cf 
+16:18:40:   1.52s \u2190 17df6d1d-f257-4b4e-b2a2-e8e60e9272d0:process_job \u25cf 
+16:18:40:   0.58s \u2192 7d7c15a8-1e52-4bdb-ac6d-401369563a5a:process_job('7d7c15a8-1e52-4bdb-ac6d-401369563a5a')
+16:18:40:   0.01s ! 7d7c15a8-1e52-4bdb-ac6d-401369563a5a:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:40:   0.39s \u2192 64e7e4ae-e41d-4c62-aa24-fe70168bbb89:process_job('64e7e4ae-e41d-4c62-aa24-fe70168bbb89')
+16:18:40:   0.16s \u2192 5e074e8a-1445-459f-8123-1b7384700c45:process_job('5e074e8a-1445-459f-8123-1b7384700c45')
+16:18:41:   1.54s \u2190 0d84b9e6-6b49-4520-976d-4c4a96fc2e49:process_job \u25cf 
+16:18:41:   0.36s \u2192 d1cceaba-712b-4be5-98b5-f05e008bb88e:process_job('d1cceaba-712b-4be5-98b5-f05e008bb88e')
+16:18:41:   0.15s \u2192 826f2c02-9318-49ea-89d1-a623a4df7bf2:process_job('826f2c02-9318-49ea-89d1-a623a4df7bf2')
+16:18:41:   1.54s \u2190 afa39d75-facd-4d33-83f3-3c59a660b76e:process_job \u25cf 
+16:18:41:   1.55s \u2190 96b95301-6347-4304-ac33-71482f14816a:process_job \u25cf 
+16:18:41:   0.47s \u2192 37fd32d0-489f-45ac-90b3-dad9b3a1c112:process_job('37fd32d0-489f-45ac-90b3-dad9b3a1c112')
+16:18:41:   0.25s \u2192 6e385b14-9a60-4d28-9bb7-e78b1e69e500:process_job('6e385b14-9a60-4d28-9bb7-e78b1e69e500')
+16:18:42:   0.49s \u2192 f03284f6-f079-4b96-9fc5-3c22854014f9:process_job('f03284f6-f079-4b96-9fc5-3c22854014f9')
+16:18:42:   0.28s \u2192 2300a960-5e68-4550-8ef7-d244cde82874:process_job('2300a960-5e68-4550-8ef7-d244cde82874')
+16:18:42:   1.53s \u2190 64e7e4ae-e41d-4c62-aa24-fe70168bbb89:process_job \u25cf 
+16:18:42:   1.53s \u2190 5e074e8a-1445-459f-8123-1b7384700c45:process_job \u25cf 
+16:18:42:   1.54s \u2190 d1cceaba-712b-4be5-98b5-f05e008bb88e:process_job \u25cf 
+16:18:42:   1.53s \u2190 826f2c02-9318-49ea-89d1-a623a4df7bf2:process_job \u25cf 
+16:18:42:   0.55s \u2192 7dd2611b-b52d-4b09-8a22-f2221b4592cd:process_job('7dd2611b-b52d-4b09-8a22-f2221b4592cd')
+16:18:42:   0.02s ! 7dd2611b-b52d-4b09-8a22-f2221b4592cd:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:42:   0.34s \u2192 be5d1e7b-0ae5-4e1c-8a9e-3c343f2f857c:process_job('be5d1e7b-0ae5-4e1c-8a9e-3c343f2f857c')
+16:18:42:   0.12s \u2192 8cff434c-261d-4060-9d3c-dd7e988b3a9f:process_job('8cff434c-261d-4060-9d3c-dd7e988b3a9f')
+16:18:42:   0.01s ! 8cff434c-261d-4060-9d3c-dd7e988b3a9f:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:43:   0.33s \u2192 d4058a52-f325-438b-a7a7-76e3d44ae8a1:process_job('d4058a52-f325-438b-a7a7-76e3d44ae8a1')
+16:18:43:   0.10s \u2192 0d39bc4e-4ff9-4cb9-95c8-3b33724460e0:process_job('0d39bc4e-4ff9-4cb9-95c8-3b33724460e0')
+16:18:43:   1.54s \u2190 37fd32d0-489f-45ac-90b3-dad9b3a1c112:process_job \u25cf 
+16:18:43:   1.53s \u2190 6e385b14-9a60-4d28-9bb7-e78b1e69e500:process_job \u25cf 
+16:18:43:   0.39s \u2192 b0788003-a7d4-45c7-b7fc-d63e9d5e3e74:process_job('b0788003-a7d4-45c7-b7fc-d63e9d5e3e74')
+16:18:43:   1.53s \u2190 f03284f6-f079-4b96-9fc5-3c22854014f9:process_job \u25cf 
+16:18:43:   0.19s \u2192 ae158c1d-68a5-41ab-86b4-4b975d7b626d:process_job('ae158c1d-68a5-41ab-86b4-4b975d7b626d')
+16:18:43:   1.54s \u2190 2300a960-5e68-4550-8ef7-d244cde82874:process_job \u25cf 
+16:18:44:   0.45s \u2192 778ab29d-6c18-4937-8dcc-fb3f907710b7:process_job('778ab29d-6c18-4937-8dcc-fb3f907710b7')
+16:18:44:   0.25s \u2192 50524bf5-86f5-40c6-9bec-06e73f573fd7:process_job('50524bf5-86f5-40c6-9bec-06e73f573fd7')
+16:18:44:   0.04s \u2192 4f6c3dd7-686a-4ef5-bf64-5cf9ddbc1ed7:process_job('4f6c3dd7-686a-4ef5-bf64-5cf9ddbc1ed7')
+16:18:44:   1.52s \u2190 be5d1e7b-0ae5-4e1c-8a9e-3c343f2f857c:process_job \u25cf 
+16:18:44:   1.54s \u2190 d4058a52-f325-438b-a7a7-76e3d44ae8a1:process_job \u25cf 
+16:18:44:   1.53s \u2190 0d39bc4e-4ff9-4cb9-95c8-3b33724460e0:process_job \u25cf 
+16:18:44:   0.33s \u2192 b53434fb-fd80-4204-b21d-95130c86f8c6:process_job('b53434fb-fd80-4204-b21d-95130c86f8c6')
+16:18:44:   0.11s \u2192 f6364a32-9581-4c77-a75c-42bac0a47112:process_job('f6364a32-9581-4c77-a75c-42bac0a47112')
+16:18:45:   1.53s \u2190 b0788003-a7d4-45c7-b7fc-d63e9d5e3e74:process_job \u25cf 
+16:18:45:   1.53s \u2190 ae158c1d-68a5-41ab-86b4-4b975d7b626d:process_job \u25cf 
+16:18:45:   0.40s \u2192 8f94c719-8c04-4375-944a-566a27bcd947:process_job('8f94c719-8c04-4375-944a-566a27bcd947')
+16:18:45:   0.02s ! 8f94c719-8c04-4375-944a-566a27bcd947:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:45:   0.20s \u2192 bdf7a36b-5e4c-4ae1-8d69-898d70eb0c2c:process_job('bdf7a36b-5e4c-4ae1-8d69-898d70eb0c2c')
+16:18:45:   1.55s \u2190 778ab29d-6c18-4937-8dcc-fb3f907710b7:process_job \u25cf 
+16:18:45:   1.53s \u2190 50524bf5-86f5-40c6-9bec-06e73f573fd7:process_job \u25cf 
+16:18:45:   1.53s \u2190 4f6c3dd7-686a-4ef5-bf64-5cf9ddbc1ed7:process_job \u25cf 
+16:18:45:   0.47s \u2192 747d006a-3046-4e22-a435-2acfe9362737:process_job('747d006a-3046-4e22-a435-2acfe9362737')
+16:18:45:   0.25s \u2192 e71a5011-8cdc-42cb-8252-8909a4c09cdc:process_job('e71a5011-8cdc-42cb-8252-8909a4c09cdc')
+16:18:45:   0.04s \u2192 a4e51b7f-c4e1-4de1-935b-dd1c34920640:process_job('a4e51b7f-c4e1-4de1-935b-dd1c34920640')
+16:18:46:   1.55s \u2190 b53434fb-fd80-4204-b21d-95130c86f8c6:process_job \u25cf 
+16:18:46:   1.54s \u2190 f6364a32-9581-4c77-a75c-42bac0a47112:process_job \u25cf 
+16:18:46:   0.33s \u2192 fa074f39-2e73-4ae4-9073-129660db4c92:process_job('fa074f39-2e73-4ae4-9073-129660db4c92')
+16:18:46:   0.12s \u2192 1c9e1b3b-914d-4111-9ea8-948639c17acc:process_job('1c9e1b3b-914d-4111-9ea8-948639c17acc')
+16:18:46:   1.52s \u2190 bdf7a36b-5e4c-4ae1-8d69-898d70eb0c2c:process_job \u25cf 
+16:18:46:   0.40s \u2192 bec72024-26c1-4269-aca4-809ab2d5637d:process_job('bec72024-26c1-4269-aca4-809ab2d5637d')
+16:18:46:   0.19s \u2192 fe9d1ffc-7b0a-4421-b408-2a38d2830c7d:process_job('fe9d1ffc-7b0a-4421-b408-2a38d2830c7d')
+16:18:47:   1.53s \u2190 747d006a-3046-4e22-a435-2acfe9362737:process_job \u25cf 
+16:18:47:   1.53s \u2190 e71a5011-8cdc-42cb-8252-8909a4c09cdc:process_job \u25cf 
+16:18:47:   1.52s \u2190 a4e51b7f-c4e1-4de1-935b-dd1c34920640:process_job \u25cf 
+16:18:47:   0.48s \u2192 d30ec34d-1682-4bfe-932a-00cdf80f2324:process_job('d30ec34d-1682-4bfe-932a-00cdf80f2324')
+16:18:47:   0.26s \u2192 1bc6e229-e8e4-4f1e-b7fd-bd2d4ec26a75:process_job('1bc6e229-e8e4-4f1e-b7fd-bd2d4ec26a75')
+16:18:47:   0.01s ! 1bc6e229-e8e4-4f1e-b7fd-bd2d4ec26a75:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:47:   0.05s \u2192 8832b8b7-e88e-4706-86be-e81f6fd40684:process_job('8832b8b7-e88e-4706-86be-e81f6fd40684')
+16:18:47:   0.02s ! 8832b8b7-e88e-4706-86be-e81f6fd40684:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:47:   1.55s \u2190 fa074f39-2e73-4ae4-9073-129660db4c92:process_job \u25cf 
+16:18:47:   1.53s \u2190 1c9e1b3b-914d-4111-9ea8-948639c17acc:process_job \u25cf 
+16:18:47:   0.34s \u2192 843fdd00-2f9a-4ec8-8fec-7dd206808e80:process_job('843fdd00-2f9a-4ec8-8fec-7dd206808e80')
+16:18:47:   0.12s \u2192 e591f9cd-e0d9-4772-b387-55e1529f0b20:process_job('e591f9cd-e0d9-4772-b387-55e1529f0b20')
+16:18:48:   1.54s \u2190 bec72024-26c1-4269-aca4-809ab2d5637d:process_job \u25cf 
+16:18:48:   1.55s \u2190 fe9d1ffc-7b0a-4421-b408-2a38d2830c7d:process_job \u25cf 
+16:18:48:   0.42s \u2192 9fa4e7a1-c06f-4a20-afaa-e43727ebeaff:process_job('9fa4e7a1-c06f-4a20-afaa-e43727ebeaff')
+16:18:48:   0.21s \u2192 db4a46fc-ce4c-4009-9cf0-c88ae3d77bf3:process_job('db4a46fc-ce4c-4009-9cf0-c88ae3d77bf3')
+16:18:48:   1.54s \u2190 d30ec34d-1682-4bfe-932a-00cdf80f2324:process_job \u25cf 
+16:18:48:   0.45s \u2192 1e3c0468-096d-4e0b-8ad9-baca48fb115a:process_job('1e3c0468-096d-4e0b-8ad9-baca48fb115a')
+16:18:48:   0.02s ! 1e3c0468-096d-4e0b-8ad9-baca48fb115a:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:48:   0.23s \u2192 d80217ab-6f99-4d63-8383-89b026dd44c7:process_job('d80217ab-6f99-4d63-8383-89b026dd44c7')
+16:18:48:   5.14s \u2192 608100ff-7acc-4bdd-86e3-697a454b8a02_attempt_2:process_job('608100ff-7acc-4bdd-86e3-697a454b8a02')
+16:18:49:   5.15s \u2192 657e5a37-f318-4b04-9d5a-0e6a198fab83_attempt_2:process_job('657e5a37-f318-4b04-9d5a-0e6a198fab83')
+16:18:49:   5.15s \u2192 7d7c15a8-1e52-4bdb-ac6d-401369563a5a_attempt_2:process_job('7d7c15a8-1e52-4bdb-ac6d-401369563a5a')
+16:18:49:   5.16s \u2192 8cff434c-261d-4060-9d3c-dd7e988b3a9f_attempt_2:process_job('8cff434c-261d-4060-9d3c-dd7e988b3a9f')
+16:18:49:   5.16s \u2192 7dd2611b-b52d-4b09-8a22-f2221b4592cd_attempt_2:process_job('7dd2611b-b52d-4b09-8a22-f2221b4592cd')
+16:18:49:   0.01s ! 7dd2611b-b52d-4b09-8a22-f2221b4592cd_attempt_2:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:49:   5.18s \u2192 14f383d8-3c30-44ed-8ec3-ee41600fae99_attempt_2:process_job('14f383d8-3c30-44ed-8ec3-ee41600fae99')
+16:18:49:   5.18s \u2192 68651528-661e-4d2e-b650-dd49e1ee74ee_attempt_2:process_job('68651528-661e-4d2e-b650-dd49e1ee74ee')
+16:18:49:   5.19s \u2192 4f771234-f756-4092-a374-52502814e178_attempt_2:process_job('4f771234-f756-4092-a374-52502814e178')
+16:18:49:   0.01s ! 4f771234-f756-4092-a374-52502814e178_attempt_2:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:49:   1.52s \u2190 843fdd00-2f9a-4ec8-8fec-7dd206808e80:process_job \u25cf 
+16:18:49:   1.52s \u2190 e591f9cd-e0d9-4772-b387-55e1529f0b20:process_job \u25cf 
+16:18:49:   0.52s \u2192 aaa7d7fa-aac2-480a-a370-969e299d663d:process_job('aaa7d7fa-aac2-480a-a370-969e299d663d')
+16:18:49:   0.01s ! aaa7d7fa-aac2-480a-a370-969e299d663d:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:49:   0.32s \u2192 cf0ebe75-7d18-4932-969c-035e89f782bf:process_job('cf0ebe75-7d18-4932-969c-035e89f782bf')
+16:18:49:   0.12s \u2192 7a49f17a-1783-49e2-b4a9-f727bb4340bf:process_job('7a49f17a-1783-49e2-b4a9-f727bb4340bf')
+16:18:49:   0.37s \u2192 993633e9-24a2-4d4c-bd71-cff3ce090f39:process_job('993633e9-24a2-4d4c-bd71-cff3ce090f39')
+16:18:50:   0.16s \u2192 e2735cda-19cb-4d84-9f74-94212c48e500:process_job('e2735cda-19cb-4d84-9f74-94212c48e500')
+16:18:50:   1.52s \u2190 9fa4e7a1-c06f-4a20-afaa-e43727ebeaff:process_job \u25cf 
+16:18:50:   1.52s \u2190 db4a46fc-ce4c-4009-9cf0-c88ae3d77bf3:process_job \u25cf 
+16:18:50:   1.52s \u2190 d80217ab-6f99-4d63-8383-89b026dd44c7:process_job \u25cf 
+16:18:50:   1.52s \u2190 608100ff-7acc-4bdd-86e3-697a454b8a02_attempt_2:process_job \u25cf 
+16:18:50:   1.52s \u2190 657e5a37-f318-4b04-9d5a-0e6a198fab83_attempt_2:process_job \u25cf 
+16:18:50:   1.52s \u2190 7d7c15a8-1e52-4bdb-ac6d-401369563a5a_attempt_2:process_job \u25cf 
+16:18:50:   1.53s \u2190 8cff434c-261d-4060-9d3c-dd7e988b3a9f_attempt_2:process_job \u25cf 
+16:18:50:   0.48s \u2192 ede79eb4-e1ad-4842-9f13-52ef7d66f74d:process_job('ede79eb4-e1ad-4842-9f13-52ef7d66f74d')
+16:18:50:   0.02s ! ede79eb4-e1ad-4842-9f13-52ef7d66f74d:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:50:   1.54s \u2190 14f383d8-3c30-44ed-8ec3-ee41600fae99_attempt_2:process_job \u25cf 
+16:18:50:   1.53s \u2190 68651528-661e-4d2e-b650-dd49e1ee74ee_attempt_2:process_job \u25cf 
+16:18:50:   0.30s \u2192 3fc454c5-9e6b-495c-92c5-d111cbecd117:process_job('3fc454c5-9e6b-495c-92c5-d111cbecd117')
+16:18:50:   0.49s \u2192 f434bbe1-3015-405f-a1ce-bb0920c9d8ec:process_job('f434bbe1-3015-405f-a1ce-bb0920c9d8ec')
+16:18:51:   0.28s \u2192 5918814b-3466-4ca2-bb94-c57f8d3bc73b:process_job('5918814b-3466-4ca2-bb94-c57f8d3bc73b')
+16:18:51:   0.06s \u2192 2f11acae-35f5-4221-91e1-afa7ee917461:process_job('2f11acae-35f5-4221-91e1-afa7ee917461')
+16:18:51:   1.53s \u2190 cf0ebe75-7d18-4932-969c-035e89f782bf:process_job \u25cf 
+16:18:51:   1.52s \u2190 7a49f17a-1783-49e2-b4a9-f727bb4340bf:process_job \u25cf 
+16:18:51:   1.52s \u2190 993633e9-24a2-4d4c-bd71-cff3ce090f39:process_job \u25cf 
+16:18:51:   1.52s \u2190 e2735cda-19cb-4d84-9f74-94212c48e500:process_job \u25cf 
+16:18:51:   0.36s \u2192 1986bf36-0bc3-4c13-8cb4-3d6926a72158:process_job('1986bf36-0bc3-4c13-8cb4-3d6926a72158')
+16:18:51:   0.15s \u2192 88c3c5f3-b4f5-411c-9969-8144fb5e0e56:process_job('88c3c5f3-b4f5-411c-9969-8144fb5e0e56')
+16:18:51:   0.01s ! 88c3c5f3-b4f5-411c-9969-8144fb5e0e56:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:52:   0.42s \u2192 b62d92f4-2565-457d-ae2e-a55c77c73e61:process_job('b62d92f4-2565-457d-ae2e-a55c77c73e61')
+16:18:52:   0.21s \u2192 63459e5c-9a2a-41a9-aa87-f2a7a4dfdbc6:process_job('63459e5c-9a2a-41a9-aa87-f2a7a4dfdbc6')
+16:18:52:   1.53s \u2190 3fc454c5-9e6b-495c-92c5-d111cbecd117:process_job \u25cf 
+16:18:52:   1.54s \u2190 f434bbe1-3015-405f-a1ce-bb0920c9d8ec:process_job \u25cf 
+16:18:52:   1.55s \u2190 5918814b-3466-4ca2-bb94-c57f8d3bc73b:process_job \u25cf 
+16:18:52:   1.53s \u2190 2f11acae-35f5-4221-91e1-afa7ee917461:process_job \u25cf 
+16:18:52:   0.51s \u2192 93ad50b0-f740-466d-8968-3fc8a1d272ae:process_job('93ad50b0-f740-466d-8968-3fc8a1d272ae')
+16:18:52:   0.29s \u2192 afdf5108-9514-4844-9216-3c6278fad386:process_job('afdf5108-9514-4844-9216-3c6278fad386')
+16:18:52:   0.07s \u2192 e08363de-c7f0-4512-8089-a85ef474a215:process_job('e08363de-c7f0-4512-8089-a85ef474a215')
+16:18:52:   0.01s ! e08363de-c7f0-4512-8089-a85ef474a215:process_job failed, ValueError: Simulated transient failure
+Traceback (most recent call last):
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\venv\Lib\site-packages\arq\worker.py", line 599, in run_job
+    result = await asyncio.wait_for(task, timeout_s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ORBIT\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\ORBIT\OneDrive\Desktop\SELF PROJECTS\Async-job-scheduling\app\worker.py", line 90, in process_job
+    raise ValueError("Simulated transient failure")
+ValueError: Simulated transient failure
+16:18:53:   1.52s \u2190 1986bf36-0bc3-4c13-8cb4-3d6926a72158:process_job \u25cf 
+16:18:53:   0.33s \u2192 396dc862-eca7-40af-bb75-ac20dc7beb45:process_job('396dc862-eca7-40af-bb75-ac20dc7beb45')
+16:18:53:   0.13s \u2192 110c397f-9fb4-408e-8c84-af7a2d78411d:process_job('110c397f-9fb4-408e-8c84-af7a2d78411d')
