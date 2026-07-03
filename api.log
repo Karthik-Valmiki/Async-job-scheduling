@@ -1,0 +1,47 @@
+INFO:     Started server process [8828]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:64342 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64342 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /static/script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "POST /api/loadtest HTTP/1.1" 202 Accepted
+[LoadTest] Started load generation for 2 minutes
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /api/metrics HTTP/1.1" 200 OK

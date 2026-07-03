@@ -1,10 +1,5 @@
 """
-Watchdog - runs independently, sweeps for stuck/dead jobs every 10 seconds.
-
-Handles:
-  1. Dead workers: last_heartbeat > 30s ago → mark DEAD
-  2. Zombie jobs: RUNNING but worker is DEAD → mark FAILED
-  3. Retry: FAILED jobs with retry_count < 3 → requeue with exponential backoff
+Watchdog Service
 """
 import asyncio
 import sys
@@ -18,8 +13,8 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 from app.database import SessionLocal
 from app import models
 
-HEARTBEAT_TIMEOUT_SECS = 30
-MAX_RETRIES = 3
+HEARTBEAT_TIMEOUT_SECS = int(os.environ.get("HEARTBEAT_TIMEOUT_SECS", 30))
+MAX_RETRIES = int(os.environ.get("MAX_RETRIES", 3))
 RETRY_DELAYS = {1: 5, 2: 30, 3: 120}   # seconds to wait before requeue
 
 
@@ -28,7 +23,9 @@ def _now():
 
 
 async def run_watchdog():
-    redis = await create_pool(RedisSettings(host="127.0.0.1", port=6379))
+    redis_host = os.environ.get("REDIS_HOST", "127.0.0.1")
+    redis_port = int(os.environ.get("REDIS_PORT", 6379))
+    redis = await create_pool(RedisSettings(host=redis_host, port=redis_port))
     print("[Watchdog] Running...")
 
     while True:

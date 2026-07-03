@@ -1,12 +1,5 @@
 """
-ARQ Worker - processes jobs from the Redis queue.
-
-Responsibilities:
-  1. Register itself in the workers table on startup.
-  2. Send a heartbeat every 5 seconds.
-  3. Pick up 'process_job' tasks, simulate work, update DB.
-  4. Handle failures: mark job FAILED, record error.
-  5. Mark itself DEAD on clean shutdown.
+ARQ Worker
 """
 import asyncio
 import socket
@@ -49,7 +42,13 @@ async def process_job(ctx: dict, job_id_str: str):
     t_start = _now()
 
     with SessionLocal() as db:
-        job = db.get(models.Job, job_id)
+        try:
+            job = db.execute(
+                select(models.Job).where(models.Job.id == job_id).with_for_update(nowait=True)
+            ).scalars().first()
+        except Exception:
+            return  # Locked by another process, safely ignore
+
         if job is None:
             return  # Job deleted - nothing to do
 
@@ -86,14 +85,10 @@ async def process_job(ctx: dict, job_id_str: str):
         execution_id = execution.id
 
     try:
-        # ── Simulate actual work (replace with real logic) ──
         import random
-        # 20% chance of failure to demonstrate the retry / FAILED path
         if random.random() < 0.20:
             raise ValueError("Simulated transient failure")
-
-        await asyncio.sleep(1.5)  # simulate processing time
-        # ────────────────────────────────────────────────────
+        await asyncio.sleep(1.5)
 
         t_end = _now()
         elapsed_ms = int((t_end - t_start).total_seconds() * 1000)
@@ -200,6 +195,9 @@ class WorkerSettings:
     functions = [process_job]
     on_startup = startup
     on_shutdown = shutdown
-    redis_settings = RedisSettings(host="127.0.0.1", port=6379)
-    max_jobs = 10
-    job_timeout = 30
+    import os
+    redis_host = os.environ.get("REDIS_HOST", "127.0.0.1")
+    redis_port = int(os.environ.get("REDIS_PORT", 6379))
+    redis_settings = RedisSettings(host=redis_host, port=redis_port)
+    max_jobs = int(os.environ.get("MAX_CONCURRENT_JOBS", 100))
+    job_timeout = int(os.environ.get("JOB_TIMEOUT_SECS", 1800))

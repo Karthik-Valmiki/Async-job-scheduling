@@ -58,4 +58,4 @@ class MetricsResponse(BaseModel):
 # ─── Load Test ───────────────────────────────────────────────────────────────
 
 class LoadTestRequest(BaseModel):
-    duration_minutes: int = Field(..., gt=0, le=60, description="Duration must be between 1 and 60 minutes")
+    duration_minutes: int = Field(..., ge=0, le=30, description="Duration must be between 0 and 30 minutes")

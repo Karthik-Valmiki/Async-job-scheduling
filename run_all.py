@@ -10,14 +10,11 @@ venv_python = r".\venv\Scripts\python.exe"
 venv_uvicorn = r".\venv\Scripts\uvicorn.exe"
 venv_arq = r".\venv\Scripts\arq.exe"
 
-api_log = open("api.log", "w")
-api_proc = subprocess.Popen([venv_uvicorn, "app.main:app", "--host", "127.0.0.1", "--port", "8000"], stdout=api_log, stderr=subprocess.STDOUT, env=env)
+api_proc = subprocess.Popen([venv_uvicorn, "app.main:app", "--host", "127.0.0.1", "--port", "8000"], env=env)
 
-arq_log = open("arq.log", "w")
-arq_proc = subprocess.Popen([venv_arq, "app.worker.WorkerSettings"], stdout=arq_log, stderr=subprocess.STDOUT, env=env)
+arq_proc = subprocess.Popen([venv_arq, "app.worker.WorkerSettings"], env=env)
 
-watchdog_log = open("watchdog.log", "w")
-watchdog_proc = subprocess.Popen([venv_python, "app/watchdog.py"], stdout=watchdog_log, stderr=subprocess.STDOUT, env=env)
+watchdog_proc = subprocess.Popen([venv_python, "app/watchdog.py"], env=env)
 
 try:
     while True:
@@ -27,6 +24,3 @@ except KeyboardInterrupt:
     api_proc.terminate()
     arq_proc.terminate()
     watchdog_proc.terminate()
-    api_log.close()
-    arq_log.close()
-    watchdog_log.close()

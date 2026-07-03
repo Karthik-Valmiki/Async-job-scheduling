@@ -11,24 +11,27 @@ import time
 
 from arq import create_pool
 from arq.connections import RedisSettings
+import os
 
 router = APIRouter()
 
 
 async def get_redis():
-    return await create_pool(RedisSettings(host="127.0.0.1", port=6379))
+    redis_host = os.environ.get("REDIS_HOST", "127.0.0.1")
+    redis_port = int(os.environ.get("REDIS_PORT", 6379))
+    return await create_pool(RedisSettings(host=redis_host, port=redis_port))
 
 
 # ─── Users ───────────────────────────────────────────────────────────────────
 
 @router.post("/users", response_model=schemas.UserResponse, status_code=201)
 def create_user(body: schemas.UserCreate, db: Session = Depends(get_db)):
-    """Create a new user (k6 calls this during setup)."""
+    """Create a new user."""
     existing = db.execute(
         select(models.User).where(models.User.email == body.email)
     ).scalars().first()
     if existing:
-        return existing  # idempotent: return the existing user
+        return existing
 
     user = models.User(email=body.email, name=body.name)
     db.add(user)
@@ -50,8 +53,7 @@ def get_user(user_id: UUID, db: Session = Depends(get_db)):
 @router.post("/jobs", response_model=schemas.JobResponse, status_code=201)
 async def submit_job(body: schemas.JobCreate, db: Session = Depends(get_db)):
     """
-    Submit a job. Security: user_id is validated against the users table
-    before inserting - prevents phantom user submissions.
+    Submit a job.
     """
     user = db.get(models.User, body.user_id)
     if not user:
@@ -86,8 +88,7 @@ async def submit_job(body: schemas.JobCreate, db: Session = Depends(get_db)):
 @router.get("/jobs/{job_id}", response_model=schemas.JobResponse)
 def get_job(job_id: UUID, user_id: UUID, db: Session = Depends(get_db)):
     """
-    Get a specific job. Requires user_id query param to prevent IDOR.
-    A user can only see their own jobs.
+    Get a specific job.
     """
     job = db.execute(
         select(models.Job).where(
